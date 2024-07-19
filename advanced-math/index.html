@@ -1,0 +1,934 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../timer/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Advanced Math Module - Connor's Roblox Scripts</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#roblox-math-module-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Connor&#39;s Roblox Scripts" class="md-header__button md-logo" aria-label="Connor's Roblox Scripts" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Connor's Roblox Scripts
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Math Module
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Connor&#39;s Roblox Scripts" class="md-nav__button md-logo" aria-label="Connor's Roblox Scripts" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Connor's Roblox Scripts
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modules
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timer Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Advanced Math Module
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Math Module
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#roblox-math-module-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roblox Math Module Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roblox Math Module Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Math Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Math Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometric-functions-derived" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Functions (Derived)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperbolic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperbolic Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-math-functions-requires-vector3-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Math Functions (Requires Vector3 objects)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Math Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#roblox-math-module-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roblox Math Module Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roblox Math Module Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Math Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Math Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometric-functions-derived" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Functions (Derived)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperbolic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperbolic Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-math-functions-requires-vector3-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Math Functions (Requires Vector3 objects)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix Math Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Advanced Math Module</h1>
+
+<h2 id="roblox-math-module-documentation">Roblox Math Module Documentation</h2>
+<p>This document explains the functionality of the <code>math_module</code> Lua module for Roblox. This module provides various mathematical functions categorized into basic, advanced, trigonometric, hyperbolic, vector, matrix, and statistical functions.</p>
+<h3 id="usage">Usage</h3>
+<p>To use this module in your Roblox script, place the following script in a <code>ModuleScript</code> in <code>ReplicatedStorage</code>.</p>
+<pre><code class="language-lua">-- math_module.lua
+
+local math_module = {}
+
+-- Simple Math Functions
+
+function math_module.add(a, b)
+    return a + b
+end
+
+function math_module.sub(a, b)
+    return a - b
+end
+
+function math_module.mul(a, b)
+    return a * b
+end
+
+function math_module.div(a, b)
+    if b == 0 then
+        error(&quot;Cannot divide by zero!&quot;)
+    end
+    return a / b
+end
+
+function math_module.mod(a, b)
+    return a % b
+end
+
+function math_module.pow(a, b)
+    return a ^ b
+end
+
+-- Advanced Math Functions
+
+function math_module.sqrt(a)
+    return math.sqrt(a)
+end
+
+function math_module.abs(a)
+    return math.abs(a)
+end
+
+function math_module.sin(a)
+    return math.sin(a)
+end
+
+function math_module.cos(a)
+    return math.cos(a)
+end
+
+function math_module.tan(a)
+    return math.tan(a)
+end
+
+function math_module.asin(a)
+    return math.asin(a)
+end
+
+function math_module.acos(a)
+    return math.acos(a)
+end
+
+function math_module.atan(a)
+    return math.atan(a)
+end
+
+function math_module.atan2(y, x)
+    return math.atan2(y, x)
+end
+
+function math_module.log(a, base)
+    if base then
+        return math.log(a) / math.log(base)
+    else
+        return math.log(a)
+    end
+end
+
+function math_module.exp(a)
+    return math.exp(a)
+end
+
+function math_module.ceil(a)
+    return math.ceil(a)
+end
+
+function math_module.floor(a)
+    return math.floor(a)
+end
+
+function math_module.round(a)
+    return math.floor(a + 0.5)
+end
+
+-- Trigonometric Functions
+
+function math_module.cot(a)
+    return 1 / math.tan(a)
+end
+
+function math_module.sec(a)
+    return 1 / math.cos(a)
+end
+
+function math_module.csc(a)
+    return 1 / math.sin(a)
+end
+
+function math_module.hypot(a, b)
+    return math.sqrt(a ^ 2 + b ^ 2)
+end
+
+-- Hyperbolic Functions
+
+function math_module.sinh(a)
+    return (math.exp(a) - math.exp(-a)) / 2
+end
+
+function math_module.cosh(a)
+    return (math.exp(a) + math.exp(-a)) / 2
+end
+
+function math_module.tanh(a)
+    return math.sinh(a) / math.cosh(a)
+end
+
+function math_module.asinh(a)
+    return math.log(a + math.sqrt(a ^ 2 + 1))
+end
+
+function math_module.acosh(a)
+    return math.log(a + math.sqrt(a ^ 2 - 1))
+end
+
+function math_module.atanh(a)
+    return math.log((1 + a) / (1 - a)) / 2
+end
+
+-- Vector Math Functions
+
+function math_module.dot(a, b)
+    return a.x * b.x + a.y * b.y + a.z * b.z
+end
+
+function math_module.cross(a, b)
+    return Vector3.new(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x)
+end
+
+function math_module.magnitude(a)
+    return math.sqrt(a.x ^ 2 + a.y ^ 2 + a.z ^ 2)
+end
+
+function math_module.normalize(a)
+    local magnitude = math_module.magnitude(a)
+    return Vector3.new(a.x / magnitude, a.y / magnitude, a.z / magnitude)
+end
+
+function math_module.distance(a, b)
+    return math.sqrt((a.x - b.x) ^ 2 + (a.y - b.y) ^ 2 + (a.z - b.z) ^ 2)
+end
+
+function math_module.angleBetween(a, b)
+    local dotProduct = math_module.dot(a, b)
+    local magnitudeA = math_module.magnitude(a)
+    local magnitudeB = math_module.magnitude(b)
+    return math.acos(dotProduct / (magnitudeA * magnitudeB))
+end
+
+-- Matrix Math Functions
+
+function math_module.multiplyMatrix(a, b)
+    local result = {}
+    for i = 1, 4 do
+        result[i] = {}
+        for j = 1, 4 do
+            result[i][j] = 0
+            for k = 1, 4 do
+                result[i][j] = result[i][j] + a[i][k] * b[k][j]
+            end
+        end
+    end
+    return result
+end
+
+function math_module.invertMatrix(a)
+    -- implement matrix inversion algorithm here
+    -- for now, just return the identity matrix
+return {
+        {1, 0, 0, 0},
+        {0, 1, 0, 0},
+        {0, 0, 1, 0},
+        {0, 0, 0, 1}
+    }
+end
+
+-- Statistical Functions
+
+function math_module.mean(numbers)
+    local sum = 0
+    for i, number in ipairs(numbers) do
+        sum = sum + number
+    end
+    return sum / #numbers
+end
+
+function math_module.median(numbers)
+    table.sort(numbers)
+    local midIndex = math.floor(#numbers / 2)
+    if #numbers % 2 == 0 then
+        return (numbers[midIndex] + numbers[midIndex + 1]) / 2
+    else
+        return numbers[midIndex]
+    end
+end
+
+function math_module.mode(numbers)
+    local frequencyTable = {}
+    for i, number in ipairs(numbers) do
+        if not frequencyTable[number] then
+            frequencyTable[number] = 1
+        else
+            frequencyTable[number] = frequencyTable[number] + 1
+        end
+    end
+    local maxFrequency = 0
+    local mode = nil
+    for number, frequency in pairs(frequencyTable) do
+        if frequency &gt; maxFrequency then
+            maxFrequency = frequency
+            mode = number
+        end
+    end
+    return mode
+end
+
+function math_module.standardDeviation(numbers)
+    local mean = math_module.mean(numbers)
+    local variance = 0
+    for i, number in ipairs(numbers) do
+        variance = variance + (number - mean) ^ 2
+    end
+    variance = variance / #numbers
+    return math.sqrt(variance)
+end
+
+return math_module
+</code></pre>
+<p>Now, require it in any script.</p>
+<pre><code class="language-lua">local math_module = require(game.ReplicatedStorage.PathToModule)
+</code></pre>
+<p>Replace <code>PathToModule</code> with the actual path to the script containing the <code>math_module</code> code. Then, you can call the desired functions from the module, like this:</p>
+<pre><code class="language-lua">local result = math_module.add(5, 3) -- result will be 8
+</code></pre>
+<h3 id="simple-math-functions">Simple Math Functions</h3>
+<ul>
+<li><strong>add(a, b):</strong> Adds two numbers <code>a</code> and <code>b</code> and returns the sum.</li>
+<li><strong>sub(a, b):</strong> Subtracts <code>b</code> from <code>a</code> and returns the difference.</li>
+<li><strong>mul(a, b):</strong> Multiplies <code>a</code> by <code>b</code> and returns the product.</li>
+<li><strong>div(a, b):</strong> Divides <code>a</code> by <code>b</code> and returns the quotient. <strong>Note:</strong> This function throws an error if <code>b</code> is zero.</li>
+<li><strong>mod(a, b):</strong> Returns the remainder of dividing <code>a</code> by <code>b</code>.</li>
+<li><strong>pow(a, b):</strong> Raises <code>a</code> to the power of <code>b</code> and returns the result.</li>
+</ul>
+<h3 id="advanced-math-functions">Advanced Math Functions</h3>
+<p>These functions utilize Lua's built-in math library for advanced operations.</p>
+<ul>
+<li><strong>sqrt(a):</strong> Calculates the square root of <code>a</code>.</li>
+<li><strong>abs(a):</strong> Returns the absolute value of <code>a</code>.</li>
+<li><strong>sin(a):</strong> Calculates the sine of <code>a</code> in radians.</li>
+<li><strong>cos(a):</strong> Calculates the cosine of <code>a</code> in radians.</li>
+<li><strong>tan(a):</strong> Calculates the tangent of <code>a</code> in radians.</li>
+<li><strong>asin(a):</strong> Calculates the arcsine of <code>a</code> in radians (inverse sine).</li>
+<li><strong>acos(a):</strong> Calculates the arccosine of <code>a</code> in radians (inverse cosine).</li>
+<li><strong>atan(a):</strong> Calculates the arctangent of <code>a</code> in radians (inverse tangent).</li>
+<li><strong>atan2(y, x):</strong> Calculates the arctangent of <code>y / x</code> in radians, considering the signs to determine the quadrant.</li>
+<li><strong>log(a, base):</strong> Calculates the logarithm of <code>a</code> with optional base. If no base is provided, it defaults to base 10 (common logarithm).</li>
+<li><strong>exp(a):</strong> Calculates the value of e raised to the power of <code>a</code>.</li>
+<li><strong>ceil(a):</strong> Returns the smallest integer greater than or equal to <code>a</code>.</li>
+<li><strong>floor(a):</strong> Returns the largest integer less than or equal to <code>a</code>.</li>
+<li><strong>round(a):</strong> Rounds <code>a</code> to the nearest integer.</li>
+</ul>
+<h3 id="trigonometric-functions-derived">Trigonometric Functions (Derived)</h3>
+<p>These functions are built upon the basic trigonometric functions.</p>
+<ul>
+<li><strong>cot(a):</strong> Calculates the cotangent of <code>a</code> (1 / tan(a)).</li>
+<li><strong>sec(a):</strong> Calculates the secant of <code>a</code> (1 / cos(a)).</li>
+<li><strong>csc(a):</strong> Calculates the cosecant of <code>a</code> (1 / sin(a)).</li>
+<li><strong>hypot(a, b):</strong> Calculates the hypotenuse of a right triangle with sides <code>a</code> and <code>b</code> using the Pythagorean theorem.</li>
+</ul>
+<h3 id="hyperbolic-functions">Hyperbolic Functions</h3>
+<p>These functions deal with hyperbolic trigonometric concepts.</p>
+<ul>
+<li><strong>sinh(a):</strong> Calculates the hyperbolic sine of <code>a</code>.</li>
+<li><strong>cosh(a):</strong> Calculates the hyperbolic cosine of <code>a</code>.</li>
+<li><strong>tanh(a):</strong> Calculates the hyperbolic tangent of <code>a</code>.</li>
+<li><strong>asinh(a):</strong> Calculates the inverse hyperbolic sine of <code>a</code>.</li>
+<li><strong>acosh(a):</strong> Calculates the inverse hyperbolic cosine of <code>a</code>.</li>
+<li><strong>atanh(a):</strong> Calculates the inverse hyperbolic tangent of <code>a</code>.</li>
+</ul>
+<h3 id="vector-math-functions-requires-vector3-objects">Vector Math Functions (Requires Vector3 objects)</h3>
+<p>These functions operate on Roblox's <code>Vector3</code> objects.</p>
+<ul>
+<li><strong>dot(a, b):</strong> Calculates the dot product of vectors <code>a</code> and <code>b</code>.</li>
+<li><strong>cross(a, b):</strong> Calculates the cross product of vectors <code>a</code> and <code>b</code>, resulting in a new vector.</li>
+<li><strong>magnitude(a):</strong> Calculates the magnitude (length) of vector <code>a</code>.</li>
+<li><strong>normalize(a):</strong> Returns a new vector in the same direction as <code>a</code></li>
+<li><strong>distance(a, b):</strong> Calculates the distance between two points represented by vectors <code>a</code> and <code>b</code>.</li>
+<li><strong>angleBetween(a, b):</strong> Calculates the angle in radians between two vectors <code>a</code> and <code>b</code>.</li>
+</ul>
+<h3 id="matrix-math-functions">Matrix Math Functions</h3>
+<p>These functions operate on 4x4 matrices (represented as tables). <strong>Note:</strong> The <code>invertMatrix</code> function is currently not implemented and returns the identity matrix.</p>
+<ul>
+<li><strong>multiplyMatrix(a, b):</strong> Multiplies two 4x4 matrices <code>a</code> and <code>b</code> and returns the resulting product matrix.</li>
+<li><strong>invertMatrix(a):</strong> This function is currently not implemented and returns the identity matrix instead. (Placeholder for future implementation)</li>
+</ul>
+<h3 id="statistical-functions">Statistical Functions</h3>
+<p>These functions perform calculations on tables containing numerical data.</p>
+<ul>
+<li><strong>mean(numbers):</strong> Calculates the average of the values in the <code>numbers</code> table.</li>
+<li><strong>median(numbers):</strong> Calculates the median of the values in the <code>numbers</code> table (middle value when sorted).</li>
+<li><strong>mode(numbers):</strong> Calculates the most frequent value (mode) in the <code>numbers</code> table.</li>
+<li><strong>standardDeviation(numbers):</strong> Calculates the standard deviation of the values in the <code>numbers</code> table.</li>
+</ul>
+<p>This concludes the documentation for the <code>math_module</code> functions.</p>
+<blockquote>
+<p>Note: This documentation may be out of date or may contain errors.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
